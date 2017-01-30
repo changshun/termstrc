@@ -1,7 +1,8 @@
 ef74ac98e353b3f445c766df8adb023d *DESCRIPTION
-b79f0a7cca67f1cfd0e3a997724832c8 *NAMESPACE
-df7ad9ba33e33c7317a3412418ba6a62 *R/bondpricing.R
-ed26bc2170c9d927aa340f1cfe1b3719 *R/couponbonds_data.R
+f5a0f66e01932f9afb3ef54555c52501 *MD5
+dea56d80914e5f93c13c08531ea8c514 *NAMESPACE
+ac7d8d32ad0362b709a685e41ec9b619 *R/bondpricing.R
+916a93c1d5f134823db9dc0263c00709 *R/couponbonds_data.R
 7e95f1ca6ff9934cfdb1fd1a70313bf9 *R/create_cf_m.R
 4a7b894ee71fec1e1387d43f958a65fd *R/cubicfunc.R
 fab7b4cd60794f9e02967fae97ef6738 *R/estim_cs.R
@@ -10,6 +11,7 @@ fab7b4cd60794f9e02967fae97ef6738 *R/estim_cs.R
 79a6d063582f32624e0d6952fc0a1e15 *R/estim_nss_zeroyields.R
 19e6c203b104454a331c5c4f41c79a44 *R/gof.R
 fdbd515ecaa010d900d55c33b13d03f0 *R/gradfunc.R
+c434bb453c5659f274392d20aa367a62 *R/md5.R
 d4090f5c283a2572e79bdd691a310635 *R/methods_couponbonds.R
 55493a537f3a5d664023a35d3a141735 *R/methods_curves.R
 2e1866eae89c4464b3d3b10acd3088bc *R/methods_dyntermstrc_nss.R
@@ -19,6 +21,10 @@ d0e90f6ee99a9b8de3e13f02a8c7b237 *R/methods_dyntermstrc_param.R
 510a22aa1f71c8c25061a781ed8a399c *R/methods_termstrc_nss.R
 736d43e33e8ccb16b54437d3de1f8b02 *R/methods_zeroyields.R
 022bbb6398fa9cb38b35bc4ef502cbe3 *R/spotfwdratedef.R
+b99152311da80a1c43e92ca429cbe1a9 *R/usefulFunc.R
+4f0e0ec2978210e64a0fbe7da583fecf *R/文件解释.html
+a51b1439086fd4cc7b3932e6078b8470 *R/文件解释.md
+30877d9fab254fc19ff109f43bbf608f *README.md
 02c2cc9da9d92f3b24ac69924f010539 *data/datadyncouponbonds.RData
 c81f207cb6b3bb13e6e6efc841f629b2 *data/govbonds.RData
 6ba89f095c338a9e2931445a77c79b31 *data/zyields.csv.xz
@@ -144,3 +150,7 @@ eeb0dd48a0da66b005e61bcba502c995 *man/zeroyields.Rd
 c310ed3e59f90b0755e520764f621eac *src/Makevars
 c8e35a7d7a206bf196cf4f391739684f *src/Makevars.win
 0f4d94baef15522ebdea958d0eea0d0e *src/objfcts.cpp
+72785eddd15937cb4cc126401fb52813 *src/objfcts.o
+ee8953f0980e1d289b2955cc1fe10b19 *src/termstrc.so
+87ea2226fbd43b39b4f725b964350eec *termstrc.Rproj
+31b865c1d0b460cebf082b1f3bf59c44 *test/TradingDat.IB.RData

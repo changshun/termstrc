@@ -127,6 +127,11 @@ summary.dyntermstrc_yields,
 summary.termstrc_cs,
 summary.termstrc_nss,
 summary.zeroyields,
-zeroyields)
+zeroyields,
+gen_CashFlow,
+calcAccrued,
+constrCouponbonds,
+constrDycouponBond
+)
 
 

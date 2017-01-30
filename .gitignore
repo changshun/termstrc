@@ -9,3 +9,4 @@ test/
 .Rbuldignore
 R/文件解释.md
 *.html
+R/md5.R

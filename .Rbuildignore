@@ -1,2 +1,10 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+
+src/*.o
+src/*.so
+src/*.dll
+test/
+R/文件解释.md
+*.html
+R/md5.R
