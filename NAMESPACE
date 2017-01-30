@@ -6,6 +6,8 @@ import(lmtest)
 import(zoo)
 import(rgl)
 import(Rcpp)
+import(magrittr)
+import(rlist)
 
 S3method(estim_cs, couponbonds)
 S3method(estim_nss, couponbonds) 

@@ -1,9 +1,11 @@
 
 ## Limit a bond data set to a certain maturity range 
 maturity_range <- function(bonddata,lower,upper) {
-  m <- lapply(bonddata,create_maturities_matrix)
+  #m <- lapply(bonddata,create_maturities_matrix)
+  m <- list.map(bonddata,group~{create_maturities_matrix(group)})
   colmax <- function(m) apply(m,2,max)
-  m_max <- lapply(m,colmax)
+  #m_max <- lapply(m,colmax)
+  m_max <- list.map(m, group~{colmax(group)})
 
   bonds_in_range <- function(group) names(group[which(
                 group>lower & group<upper)])

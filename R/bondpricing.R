@@ -31,15 +31,15 @@ bond_yields <- function(cashflows, m, searchint=c(-1,1), tol=1e-10) {
   # create empty bond yields matrix in appropriate size
   bondyields <- matrix(0, nrow=ncol(cashflows), ncol=2)
   # put maturity of every bond into first column of bond yields matrix
-  bondyields[,1] <- apply(m, 2, max)
+  bondyields[,1] <- apply(m, 2, max) # 每只债券的到期期限(最后一期支付的期限)
   # traverse list of bonds
   for (i in seq_len(ncol(cashflows))) {
     # present value of cash flows for root finding 
-    pvcashflows <- function(y) {
+    pvcashflows <- function(y) { # 计算现值的函数
       t(cashflows[,i])%*%exp(-m[,i]*y)
     }
     # calculate bond yields
-    bondyields[i,2] <- uniroot(pvcashflows, searchint, tol = tol,maxiter=3000)$root 
+    bondyields[i,2] <- uniroot(pvcashflows, searchint, tol = tol,maxiter=3000)$root # NPV无限接近0
   }
   # return calculated bond yields matrix
   rownames(bondyields) <- colnames(cashflows)
