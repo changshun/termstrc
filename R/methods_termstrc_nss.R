@@ -58,10 +58,11 @@ plot.termstrc_nss <-
     	 
     	title(names(x$opt_result)[k])
     	 
-    	if(ctype=="spot") {points(x$y[[k]][,1],x$y[[k]][,2]*100,col="red") 
-    		legend("bottom",legend=c("Zero-coupon yield curve","Yield-to-maturity"),
-                col=c("steelblue","red"), lty = c(1, -1), pch=c(-1,21))}
-        else 	legend("bottom",legend=cname	,col=c("steelblue"), lty = lty , pch=(-1))
+    # 	if(ctype=="spot") {points(x$y[[k]][,1],x$y[[k]][,2]*100,col="red") 
+    # 		legend("bottom",legend=c("Zero-coupon yield curve","Yield-to-maturity"),
+    #             col=c("steelblue","red"), lty = c(1, -1), pch=c(-1,21))}
+        #else 	
+        legend("bottom",legend=cname	,col=c("steelblue"), lty = lty , pch=(-1))
 
     	
     	}     
